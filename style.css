@@ -1,0 +1,86 @@
+body {
+    background-color: #C0C0C0; /* Web gray color */
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('graphics/roy_skate1_bg_242x242.png'); /* Repeating background image */
+    background-repeat: repeat; /* This will tile the image */
+    background-size: 242px; /* Size of the background image tiles */
+    background-attachment: fixed; /* This will make the background fixed during scroll */
+}
+
+a {
+    color: blue; /* Default blue for links */
+}
+
+a:visited {
+    color: purple; /* Purple for visited links */
+}
+
+.header, header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+select {
+    margin: 10px;
+}
+
+img.skate-image {
+    width: 100px; /* Adjusted width for the header image */
+    height: auto; /* Maintain aspect ratio of the image */
+    display: block;
+    margin: 0 auto; /* This centers the image */
+}
+
+/* Style for tables */
+table {
+    border-collapse: separate; /* Use separate to allow for 3D border styles */
+    border-spacing: 0; /* Remove spacing between cells */
+    margin: 0 auto; /* Center the table horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow around the table for depth */
+    background-color: #fff; /* Background color for the table */
+    border: 2px outset #999; /* Outset border for the entire table */
+}
+
+/* Style for table cells */
+td, th {
+    padding: 8px; /* Padding inside each cell */
+    text-align: left; /* Align text to the left */
+    border: 2px inset #999; /* Inset border for each cell */
+}
+
+/* Style for table headers */
+th {
+    background-color: #ddd; /* Light grey background for headers */
+    font-weight: bold; /* Make header text bold */
+}
+
+/* Centering the content within the main#storelist element */
+main#storeList {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the child elements (divs for each shop) horizontally */
+    width: 100%;
+}
+
+/* Style for each shop entry */
+main#storeList > div {
+    width: 80%; /* Adjust the width as necessary */
+    max-width: 600px; /* Ensures the div does not become too wide on larger screens */
+    margin-bottom: 20px; /* Adds some space between entries */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    padding: 10px; /* Adds some padding inside each div for better readability */
+    /* background-color: #fff; /* Makes the background of each entry white */
+}
+
+/* Style for the hr element to not stretch too wide */
+main#storeList > hr {
+    width: 60%;
+    margin: 20px auto; /* Centers the <hr> and adds vertical spacing */
+    border: 0;
+    height: 10px; /* Makes the <hr> thicker and more visible */
+    /*background-color: #333; /* Change to a color that contrasts well with your page background */
+    display:block;
+    background-image:url('graphics/wheels.png');
+}
+
