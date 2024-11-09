@@ -24,6 +24,13 @@ select {
     margin: 10px;
 }
 
+img.title-image {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 img.skate-image {
     width: 100px; /* Adjusted width for the header image */
     height: auto; /* Maintain aspect ratio of the image */
