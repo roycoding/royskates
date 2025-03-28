@@ -45,6 +45,10 @@ img.skate-image {
     margin: 0 auto; /* This centers the image */
 }
 
+img.flag {
+    border-radius: 15%;
+  }
+
 /* Style for tables */
 table {
     border-collapse: separate; /* Use separate to allow for 3D border styles */
