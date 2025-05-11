@@ -118,3 +118,21 @@ main#storeList > hr {
     display: block; /* Remove extra space below image if it's inline */
 }
 
+@media (max-width: 600px) {
+    .main-nav {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images horizontally when stacked */
+    }
+
+    .main-nav .nav-image {
+        width: 80%; /* Adjust width for smaller screens */
+        max-width: 256px; /* Ensure images don't exceed their original intended size */
+        margin-bottom: 15px; /* Add space between stacked images */
+    }
+
+    /* Remove margin from the last image in the column layout */
+    .main-nav a:last-child .nav-image {
+        margin-bottom: 0;
+    }
+}
+
