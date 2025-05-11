@@ -102,3 +102,19 @@ main#storeList > hr {
     background-image:url('graphics/wheels.png');
 }
 
+/* Main Navigation Styles */
+.main-nav {
+    display: flex;
+    justify-content: center; /* Horizontally center the images */
+    align-items: center; /* Vertically align images if their heights differ slightly */
+    gap: 20px; /* Space between the two images */
+    margin-top: 20px; /* Space above the navigation */
+    margin-bottom: 20px; /* Space below the navigation */
+}
+
+.main-nav .nav-image {
+    width: 256px; /* Set fixed width for consistent sizing */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image if it's inline */
+}
+
