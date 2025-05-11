@@ -107,30 +107,19 @@ main#storeList > hr {
     display: flex;
     justify-content: center; /* Horizontally center the images */
     align-items: center; /* Vertically align images if their heights differ slightly */
-    gap: 20px; /* Space between the two images */
+    gap: 10px; /* Space between the two images, now default for all sizes */
     margin-top: 20px; /* Space above the navigation */
     margin-bottom: 20px; /* Space below the navigation */
 }
 
 .main-nav .nav-image {
-    width: 256px; /* Set fixed width for consistent sizing */
+    width: 120px; /* Set fixed width for consistent sizing, now default for all sizes */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove extra space below image if it's inline */
 }
 
-@media (max-width: 600px) {
-    .main-nav {
-        /* Images will be in a row due to default flex behavior or inherited style. */
-        /* justify-content: center; and align-items: center; from desktop rules still apply. */
-        gap: 10px; /* Reduced gap for smaller screens */
-    }
-
-    .main-nav .nav-image {
-        width: 120px; /* Smaller fixed width for side-by-side layout on mobile */
-        /* height: auto; and display: block; from desktop rules still apply. */
-        /* margin-bottom is removed as they are no longer stacked. */
-    }
-
-    /* The rule for a:last-child .nav-image is no longer needed. */
-}
+/*
+The @media (max-width: 600px) rules for .main-nav and .main-nav .nav-image
+are no longer needed as their styles are now the default.
+*/
 
