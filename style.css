@@ -131,7 +131,7 @@ are no longer needed as their styles are now the default.
 .floating-arrow-notice {
     position: absolute;
     top: -15px;          /* Positioned 15px above the top of the wrapper (and image). */
-    left: 75px;          /* Positioned 75px from the left of the wrapper.
+    left: 85px;          /* Moved further to the right.
                            Given a 120px image, this starts the element on the right half. */
     color: #b234e2;      /* Site's purple color. */
     font-weight: bold;
@@ -145,6 +145,15 @@ are no longer needed as their styles are now the default.
     z-index: 10;         /* Ensures it's on top of other elements. */
     transform: rotate(-10deg); /* Tilts the element slightly. */
     transform-origin: bottom left; /* Rotation point is near the arrow. */
+}
+
+.floating-arrow-notice .arrow-char {
+    font-size: 1.5em; /* Makes the arrow character larger */
+    font-weight: 900; /* Makes the arrow character bolder */
+}
+
+.floating-arrow-notice .play-text-promo {
+    font-weight: 900; /* Makes the "Play!" text bolder */
 }
 
 @keyframes blink-and-pulse {
