@@ -120,19 +120,17 @@ main#storeList > hr {
 
 @media (max-width: 600px) {
     .main-nav {
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center images horizontally when stacked */
+        /* Images will be in a row due to default flex behavior or inherited style. */
+        /* justify-content: center; and align-items: center; from desktop rules still apply. */
+        gap: 10px; /* Reduced gap for smaller screens */
     }
 
     .main-nav .nav-image {
-        width: 80%; /* Adjust width for smaller screens */
-        max-width: 256px; /* Ensure images don't exceed their original intended size */
-        margin-bottom: 15px; /* Add space between stacked images */
+        width: 120px; /* Smaller fixed width for side-by-side layout on mobile */
+        /* height: auto; and display: block; from desktop rules still apply. */
+        /* margin-bottom is removed as they are no longer stacked. */
     }
 
-    /* Remove margin from the last image in the column layout */
-    .main-nav a:last-child .nav-image {
-        margin-bottom: 0;
-    }
+    /* The rule for a:last-child .nav-image is no longer needed. */
 }
 
