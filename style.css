@@ -130,31 +130,18 @@ are no longer needed as their styles are now the default.
 
 .floating-arrow-notice {
     position: absolute;
-    top: -15px;          /* Positioned 15px above the top of the wrapper (and image). */
-    left: 85px;          /* Moved further to the right.
-                           Given a 120px image, this starts the element on the right half. */
-    color: #b234e2;      /* Site's purple color. */
-    font-weight: bold;
-    font-size: 1em;      /* Adjust size as needed. */
-    padding: 4px 8px;    /* Padding around the text. */
-    background-color: rgba(220, 220, 220, 0.9); /* Light grey, mostly opaque background. */
-    border: 1px solid #b234e2; /* Purple border. */
-    border-radius: 8px;  /* Rounded corners. */
+    top: -15px;          /* Positioned 15px above the top of the wrapper (and image). Adjust as needed. */
+    left: 85px;          /* Position from the left. Adjust as needed for your image. */
+    /* Removed text-specific styles: color, font-weight, font-size, padding, background-color, border, border-radius, white-space */
+    width: 61px; /* Width of your PNG image */
+    height: 31px; /* Height of your PNG image */
     animation: blink-and-pulse 1.5s linear infinite; /* Blinking and pulsing animation. */
-    white-space: nowrap; /* Ensures "↙ Play!" stays on one line. */
     z-index: 10;         /* Ensures it's on top of other elements. */
-    transform: rotate(-10deg); /* Tilts the element slightly. */
-    transform-origin: bottom left; /* Rotation point is near the arrow. */
+    transform: rotate(-10deg); /* Tilts the element slightly. Adjust as needed. */
+    transform-origin: bottom left; /* Rotation point. Adjust as needed for your image. */
 }
 
-.floating-arrow-notice .arrow-char {
-    font-size: 1.5em; /* Makes the arrow character larger */
-    font-weight: 900; /* Makes the arrow character bolder */
-}
-
-.floating-arrow-notice .play-text-promo {
-    font-weight: 900; /* Makes the "Play!" text bolder */
-}
+/* Removed .floating-arrow-notice .arrow-char and .floating-arrow-notice .play-text-promo rules as they are no longer used. */
 
 @keyframes blink-and-pulse {
     0%, 100% {
