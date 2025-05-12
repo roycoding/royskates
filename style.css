@@ -143,14 +143,14 @@ are no longer needed as their styles are now the default.
 
 .floating-arrow-notice2 {
     position: absolute;
-    top: 50px;          /* Positioned 15px above the top of the wrapper (and image). Adjust as needed. */
-    left: 90px;          /* Position from the left. Adjust as needed for your image. */
+    top: -5px;          /* Positioned 15px above the top of the wrapper (and image). Adjust as needed. */
+    left: 110px;          /* Position from the left. Adjust as needed for your image. */
     /* Removed text-specific styles: color, font-weight, font-size, padding, background-color, border, border-radius, white-space */
     width: 61px; /* Width of your PNG image */
     height: 31px; /* Height of your PNG image */
     animation: blink-and-pulse-arrow2 1.5s linear infinite; /* Blinking and pulsing animation for arrow 2. */
     z-index: 10;         /* Ensures it's on top of other elements. */
-    transform: rotate(-40deg); /* Rotated 10deg clockwise from -50deg. */
+    transform: rotate(40deg);
     transform-origin: bottom left; /* Rotation point. Adjust as needed for your image. */
 }
 
@@ -168,11 +168,11 @@ are no longer needed as their styles are now the default.
 @keyframes blink-and-pulse-arrow2 {
     0%, 100% {
         opacity: 1;
-        transform: scale(1) rotate(-40deg); /* Uses new rotation for arrow 2 */
+        transform: scale(1) rotate(40deg); /* Uses new rotation for arrow 2 */
     }
     50% {
         opacity: 0.4; /* Dims the element. */
-        transform: scale(1.1) rotate(-40deg); /* Uses new rotation for arrow 2 & makes it slightly larger. */
+        transform: scale(1.1) rotate(40deg); /* Uses new rotation for arrow 2 & makes it slightly larger. */
     }
 }
 
