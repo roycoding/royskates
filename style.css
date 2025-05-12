@@ -130,8 +130,8 @@ are no longer needed as their styles are now the default.
 
 .floating-arrow-notice {
     position: absolute;
-    top: -15px;          /* Positioned 15px above the top of the wrapper (and image). Adjust as needed. */
-    left: 85px;          /* Position from the left. Adjust as needed for your image. */
+    top: -20px;          /* Positioned 15px above the top of the wrapper (and image). Adjust as needed. */
+    left: 90px;          /* Position from the left. Adjust as needed for your image. */
     /* Removed text-specific styles: color, font-weight, font-size, padding, background-color, border, border-radius, white-space */
     width: 61px; /* Width of your PNG image */
     height: 31px; /* Height of your PNG image */
@@ -141,7 +141,18 @@ are no longer needed as their styles are now the default.
     transform-origin: bottom left; /* Rotation point. Adjust as needed for your image. */
 }
 
-/* Removed .floating-arrow-notice .arrow-char and .floating-arrow-notice .play-text-promo rules as they are no longer used. */
+.floating-arrow-notice2 {
+    position: absolute;
+    top: 50px;          /* Positioned 15px above the top of the wrapper (and image). Adjust as needed. */
+    left: 90px;          /* Position from the left. Adjust as needed for your image. */
+    /* Removed text-specific styles: color, font-weight, font-size, padding, background-color, border, border-radius, white-space */
+    width: 61px; /* Width of your PNG image */
+    height: 31px; /* Height of your PNG image */
+    animation: blink-and-pulse 1.5s linear infinite; /* Blinking and pulsing animation. */
+    z-index: 10;         /* Ensures it's on top of other elements. */
+    transform: rotate(-50deg); /* Tilts the element slightly. Adjust as needed. */
+    transform-origin: bottom left; /* Rotation point. Adjust as needed for your image. */
+}
 
 @keyframes blink-and-pulse {
     0%, 100% {
